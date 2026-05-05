@@ -320,7 +320,7 @@ section {
 
 .graph-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -367,6 +367,91 @@ canvas {
   font-size: 0.85rem;
   color: var(--deep-navy);
   font-weight: 500;
+}
+
+/* ===== FORMULÁRIO DE PESQUISA ===== */
+.survey-section {
+  background: var(--off-white);
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.survey-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.survey-card h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.survey-intro {
+  text-align: center;
+  color: var(--slate-gray);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.question-item {
+  margin-bottom: 1.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eef2f6;
+}
+
+.question-text {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--deep-navy);
+  font-size: 1rem;
+}
+
+.options-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--slate-gray);
+}
+
+.option-label input[type="radio"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  cursor: pointer;
+  accent-color: var(--coral-bright);
+}
+
+.submit-survey {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.survey-feedback {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  display: none;
+}
+
+.survey-feedback.success {
+  background: rgba(45, 212, 191, 0.15);
+  color: #0d6b5e;
+  display: block;
 }
 
 /* ===== SEÇÃO DESIGN UNIVERSAL ===== */
@@ -576,5 +661,13 @@ button:focus-visible,
 
   .card {
     padding: 1.2rem;
+  }
+  
+  .options-group {
+    gap: 0.8rem;
+  }
+  
+  .option-label {
+    font-size: 0.8rem;
   }
 }
