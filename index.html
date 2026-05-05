@@ -24,6 +24,7 @@
           <li><a href="#hero">Início</a></li>
           <li><a href="#tecnologias">Tecnologias</a></li>
           <li><a href="#indicadores">Indicadores</a></li>
+          <li><a href="#pesquisa">Pesquisa</a></li>
           <li><a href="#design-universal">Design Universal</a></li>
           <li><a href="#creditos-footer">Créditos</a></li>
         </ul>
@@ -93,8 +94,131 @@
             <p class="graph-note">Índice de barreiras eliminadas (base 100 = 2020)</p>
           </div>
         </div>
+        
+        <!-- NOVO GRÁFICO - Dados de posição e tempo -->
+        <div class="graph-card" style="margin-top: 1rem;">
+          <h3>Medições de Deslocamento por Posição (t1 a t5)</h3>
+          <canvas id="chartMultiLine" width="800" height="350" aria-label="Gráfico de linhas mostrando medições por posição e tempo" role="img"></canvas>
+          <p class="graph-note">Valores de medição (t1 a t5) para diferentes posições (0.5 a 2.5) - Dados experimentais de laboratório</p>
+        </div>
+        
         <div class="insight-badge">
           <span>Fonte: Laboratório de Mobilidade & Dados W3C/WAI - Projeções 2025</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário de Pesquisa - 10 perguntas -->
+    <section id="pesquisa" class="survey-section section-fade">
+      <div class="container">
+        <div class="section-header">
+          <h2>Pesquisa sobre Mobilidade e Acessibilidade</h2>
+          <p>Sua participação contribui para o desenvolvimento de políticas públicas mais inclusivas</p>
+        </div>
+        <div class="survey-card">
+          <h3>Questionário de Avaliação</h3>
+          <p class="survey-intro">As respostas são anônimas e confidenciais. Selecione a opção que melhor representa sua percepção.</p>
+          <form id="accessibilitySurvey">
+            <div class="question-item">
+              <div class="question-text">1. Como você avalia a acessibilidade das calçadas em sua região?</div>
+              <div class="options-group">
+                <label class="option-label"><input type="radio" name="q1" value="Muito ruim"> Muito ruim</label>
+                <label class="option-label"><input type="radio" name="q1" value="Ruim"> Ruim</label>
+                <label class="option-label"><input type="radio" name="q1" value="Regular"> Regular</label>
+                <label class="option-label"><input type="radio" name="q1" value="Boa"> Boa</label>
+                <label class="option-label"><input type="radio" name="q1" value="Muito boa"> Muito boa</label>
+              </div>
+            </div>
+            <div class="question-item">
+              <div class="question-text">2. Você considera que o transporte público atende adequadamente pessoas com deficiência ou mobilidade reduzida?</div>
+              <div class="options-group">
+                <label class="option-label"><input type="radio" name="q2" value="Não atende"> Não atende</label>
+                <label class="option-label"><input type="radio" name="q2" value="Atende parcialmente"> Atende parcialmente</label>
+                <label class="option-label"><input type="radio" name="q2" value="Atende bem"> Atende bem</label>
+                <label class="option-label"><input type="radio" name="q2" value="Atende plenamente"> Atende plenamente</label>
+              </div>
+            </div>
+            <div class="question-item">
+              <div class="question-text">3. Com que frequência você utiliza rampas de acessibilidade em vias públicas?</div>
+              <div class="options-group">
+                <label class="option-label"><input type="radio" name="q3" value="Nunca"> Nunca</label>
+                <label class="option-label"><input type="radio" name="q3" value="Raramente"> Raramente</label>
+                <label class="option-label"><input type="radio" name="q3" value="Às vezes"> Às vezes</label>
+                <label class="option-label"><input type="radio" name="q3" value="Frequentemente"> Frequentemente</label>
+                <label class="option-label"><input type="radio" name="q3" value="Sempre"> Sempre</label>
+              </div>
+            </div>
+            <div class="question-item">
+              <div class="question-text">4. Na sua opinião, a sinalização tátil no piso (para pessoas cegas) está presente e bem conservada?</div>
+              <div class="options-group">
+                <label class="option-label"><input type="radio" name="q4" value="Ausente"> Ausente</label>
+                <label class="option-label"><input type="radio" name="q4" value="Pouca presença"> Pouca presença</label>
+                <label class="option-label"><input type="radio" name="q4" value="Moderada"> Moderada</label>
+                <label class="option-label"><input type="radio" name="q4" value="Ampla e conservada"> Ampla e conservada</label>
+              </div>
+            </div>
+            <div class="question-item">
+              <div class="question-text">5. Como você classifica a disponibilidade de tecnologias assistivas (aplicativos, mapas sonoros, etc.) na sua cidade?</div>
+              <div class="options-group">
+                <label class="option-label"><input type="radio" name="q5" value="Inexistente"> Inexistente</label>
+                <label class="option-label"><input type="radio" name="q5" value="Insuficiente"> Insuficiente</label>
+                <label class="option-label"><input type="radio" name="q5" value="Razoável"> Razoável</label>
+                <label class="option-label"><input type="radio" name="q5" value="Avançada"> Avançada</label>
+              </div>
+            </div>
+            <div class="question-item">
+              <div class="question-text">6. Você acredita que campanhas de conscientização sobre mobilidade inclusiva são eficazes?</div>
+              <div class="options-group">
+                <label class="option-label"><input type="radio" name="q6" value="Pouco eficaz"> Pouco eficaz</label>
+                <label class="option-label"><input type="radio" name="q6" value="Moderadamente eficaz"> Moderadamente eficaz</label>
+                <label class="option-label"><input type="radio" name="q6" value="Eficaz"> Eficaz</label>
+                <label class="option-label"><input type="radio" name="q6" value="Muito eficaz"> Muito eficaz</label>
+              </div>
+            </div>
+            <div class="question-item">
+              <div class="question-text">7. Os prédios públicos e espaços comerciais em sua região possuem acessibilidade adequada (elevadores, rampas, banheiros adaptados)?</div>
+              <div class="options-group">
+                <label class="option-label"><input type="radio" name="q7" value="Nenhum"> Nenhum</label>
+                <label class="option-label"><input type="radio" name="q7" value="Poucos"> Poucos</label>
+                <label class="option-label"><input type="radio" name="q7" value="Metade"> Metade</label>
+                <label class="option-label"><input type="radio" name="q7" value="Maioria"> Maioria</label>
+                <label class="option-label"><input type="radio" name="q7" value="Todos"> Todos</label>
+              </div>
+            </div>
+            <div class="question-item">
+              <div class="question-text">8. Como você avalia a prioridade dada pela prefeitura para obras de acessibilidade?</div>
+              <div class="options-group">
+                <label class="option-label"><input type="radio" name="q8" value="Muito baixa"> Muito baixa</label>
+                <label class="option-label"><input type="radio" name="q8" value="Baixa"> Baixa</label>
+                <label class="option-label"><input type="radio" name="q8" value="Média"> Média</label>
+                <label class="option-label"><input type="radio" name="q8" value="Alta"> Alta</label>
+                <label class="option-label"><input type="radio" name="q8" value="Muito alta"> Muito alta</label>
+              </div>
+            </div>
+            <div class="question-item">
+              <div class="question-text">9. Você se sente seguro ao se deslocar usando recursos de acessibilidade na sua cidade?</div>
+              <div class="options-group">
+                <label class="option-label"><input type="radio" name="q9" value="Muito inseguro"> Muito inseguro</label>
+                <label class="option-label"><input type="radio" name="q9" value="Inseguro"> Inseguro</label>
+                <label class="option-label"><input type="radio" name="q9" value="Neutro"> Neutro</label>
+                <label class="option-label"><input type="radio" name="q9" value="Seguro"> Seguro</label>
+                <label class="option-label"><input type="radio" name="q9" value="Muito seguro"> Muito seguro</label>
+              </div>
+            </div>
+            <div class="question-item">
+              <div class="question-text">10. O que mais impactaria positivamente a mobilidade urbana na sua visão?</div>
+              <div class="options-group">
+                <label class="option-label"><input type="radio" name="q10" value="Mais rampas"> Mais rampas e calçadas</label>
+                <label class="option-label"><input type="radio" name="q10" value="Transporte adaptado"> Frota de transporte adaptado</label>
+                <label class="option-label"><input type="radio" name="q10" value="Tecnologia assistiva"> Tecnologia assistiva (apps, sensores)</label>
+                <label class="option-label"><input type="radio" name="q10" value="Fiscalização"> Fiscalização e Manutenção</label>
+              </div>
+            </div>
+            <div class="submit-survey">
+              <button type="button" id="submitSurveyBtn" class="btn">Enviar respostas</button>
+            </div>
+            <div id="surveyFeedback" class="survey-feedback"></div>
+          </form>
         </div>
       </div>
     </section>
